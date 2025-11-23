@@ -18,5 +18,5 @@ map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 map("n", "<leader>f", function() vim.lsp.buf.format() end, opts)
 
-
+map("n", "<M-i>", function() vim.diagnostic.open_float() end, {desc = "Show diagnostics"})
 
