@@ -18,5 +18,15 @@ map("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
 map("n", "<leader>f", function() vim.lsp.buf.format() end, opts)
 
-map("n", "<M-i>", function() vim.diagnostic.open_float() end, {desc = "Show diagnostics"})
+map("n", "<M-i>", function() 
+    vim.diagnostic.open_float(nil,{
+        focusable = false,
+        border = "rounded",
+        source = "always",
+        header = "Diagnostic",
+        scope = "line",
+    }) 
+end, opts)
+
+map("n", "<M-d>", "<cmd>Telescope diagnostics<CR>", opts)
 
