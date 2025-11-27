@@ -15,7 +15,6 @@ return {
           "rust_analyzer",
           "jdtls",
           "ts_ls",        -- заменяет tsserver
-          "volar",
           "dockerls",
           "sqlls",
         },
@@ -43,7 +42,6 @@ return {
         rust_analyzer = {},
         jdtls = {},
         ts_ls = {},
-        volar = {},
         dockerls = {},
         sqlls = {},
       }
